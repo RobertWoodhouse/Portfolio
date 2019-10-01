@@ -2647,6 +2647,23 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+		/*
+		.image.custom {
+			float: left;
+			top: 0.25em;
+			display: inline;
+			max-width: 60%;
+			width: 100%;
+			height: 100%;
+		}
+
+			.image.custom img {
+				max-width: 60%;
+				max-height: 60%;
+				width: 100%;
+				height: 100%;
+			}
+			*/
 
 /* List */
 

@@ -198,7 +198,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 3.75em;
 	}
 
 		h1.major {
@@ -3983,3 +3983,27 @@ input, select, textarea {
 			height: 25px;
 			background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48ZyBpZD0ic3VyZmFjZTEiPjxwYXRoIHN0eWxlPSIgIiBkPSJNIDQ0LjA4MjAzMSAyNS4yMDcwMzEgTCA0Ni45MDIzNDQgMjAuNDI5Njg4IEMgNDcuMDE1NjI1IDIwLjE5MTQwNiA0Ny4wMzEyNSAxOS45MTc5NjkgNDYuOTQ1MzEzIDE5LjY3MTg3NSBMIDQxLjM1OTM3NSAzLjY3MTg3NSBDIDQxLjE4NzUgMy4xODM1OTQgNDAuNjc1NzgxIDIuOTA2MjUgNDAuMTc5Njg4IDMuMDI3MzQ0IEwgMjMuNzYxNzE5IDcuMDI3MzQ0IEMgMjMuNDQ5MjE5IDcuMTA1NDY5IDIzLjE5MTQwNiA3LjMyODEyNSAyMy4wNzAzMTMgNy42Mjg5MDYgTCAyMS4zMjQyMTkgMTIgTCAxNiAxMiBDIDE1LjcyMjY1NiAxMiAxNS40NTMxMjUgMTIuMTE3MTg4IDE1LjI2NTYyNSAxMi4zMjAzMTMgTCAzLjI2NTYyNSAyNS4zMjAzMTMgQyAyLjg5NDUzMSAyNS43MjI2NTYgMi45MTQwNjMgMjYuMzQ3NjU2IDMuMzA4NTk0IDI2LjcyMjY1NiBMIDE1Ljg5NDUzMSAzOC43MjI2NTYgQyAxNi4wNzgxMjUgMzguOTAyMzQ0IDE2LjMyODEyNSAzOSAxNi41ODIwMzEgMzkgTCAyMi4zMjAzMTMgMzkgTCAyNC4wNzAzMTMgNDMuMzcxMDk0IEMgMjQuMTk5MjE5IDQzLjY5NTMxMyAyNC40ODgyODEgNDMuOTI1NzgxIDI0LjgyODEyNSA0My45ODQzNzUgTCA0Mi4yODkwNjMgNDYuOTg0Mzc1IEMgNDIuMzQzNzUgNDYuOTk2MDk0IDQyLjQwMjM0NCA0NyA0Mi40NTcwMzEgNDcgQyA0Mi45MjE4NzUgNDcgNDMuMzMyMDMxIDQ2LjY3OTY4OCA0My40MzM1OTQgNDYuMjE0ODQ0IEwgNDYuOTc2NTYzIDI5Ljk4NDM3NSBDIDQ3LjAzMTI1IDI5LjczNDM3NSA0Ni45ODgyODEgMjkuNDcyNjU2IDQ2Ljg1MTU2MyAyOS4yNSBaIE0gMjEuMzI0MjE5IDEyIEwgMzUuNDE3OTY5IDkuNDE3OTY5IEwgMjggMjQgTCAxMS4xNjc5NjkgMjQgWiBNIDIyLjMyNDIxOSAzOSBMIDExLjE2Nzk2OSAyOCBMIDI4IDI4IEwgMzYuNzUgNDEuMTY3OTY5IFogTSA0MC4zODY3MTkgMzguODk4NDM4IEwgMzIgMjYgTCAzOS4zMzIwMzEgMTEuNDE3OTY5IEwgNDQuMDgyMDMxIDI1LjIxMDkzOCBaICI+PC9wYXRoPjwvZz48L3N2Zz4=') 50% 50% no-repeat;
 			background-size: 100%; }
+
+
+/* Fonts */ 			
+@font-face {
+	font-family: Gunblade;
+	src: url("assets/webfonts/gunblade.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: Gunblade;
+	font-weight: bold;
+	src: url("assets/webfonts/gunblade.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: Minerva;
+	src: url("assets/webfonts/Minerva.otf") format("truetype");
+}
+
+@font-face {
+	font-family: Minerva;
+	font-weight: italic;
+	src: url("assets/webfonts/MinervaItalic.otf") format("truetype");
+}

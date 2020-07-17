@@ -2647,6 +2647,27 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+		.image.mobile {
+			/*display: block;
+			margin: 0 0 3em 0;
+			width: 100%;*/
+
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			top: -70px;
+			left: 30px;
+		
+			/* Scale the image as you normally would. */
+			/*width: 300px;
+			height: 150px;*/
+		}
+	
+			.image.mobile img {
+				height: 25%;
+				width: 25%;
+			}
 		/*
 		.image.custom {
 			float: left;

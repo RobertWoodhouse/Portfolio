@@ -2668,6 +2668,19 @@ input, select, textarea {
 				height: 25%;
 				width: 25%;
 			}
+
+			.image.mob-r img {
+				float: right;
+				width:15%;
+				margin-left:15px;
+			}
+	
+			.image.mob-l img {
+				float: left;
+				width:15%;
+				margin-right:15px;
+			}
+
 		/*
 		.image.custom {
 			float: left;

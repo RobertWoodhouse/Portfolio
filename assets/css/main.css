@@ -92,7 +92,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		/*background: #312450;*/
+		background: #000
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3117,7 +3118,8 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: #312450b0;
+				/*background: #312450b0;*/
+				background: #000000b0;
 				content: '';
 				display: block;
 				height: 100%;
@@ -3335,15 +3337,17 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #613e8fdc;
+			background-color: #312450;
 		}
 
 		.wrapper.style1 {
-			background-color: #613e8fdc;
+			/*background-color: #613e8fdc;*/
+			background-color: #000;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #613e8fdc;
+			background-color: #312450;
+			/*background-color: #000;*/
 		}
 
 		.wrapper.style2 {
@@ -3469,7 +3473,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #312450;
+		/*background-color: #312450;*/
+		background-color: #000;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3487,7 +3492,8 @@ input, select, textarea {
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
-			text-align: right;
+			/*text-align: right;*/
+			text-align: center;
 		}
 
 			#header > nav > ul {
@@ -3557,6 +3563,14 @@ input, select, textarea {
 						#header > nav > ul > li a {
 							height: 6em;
 							line-height: 6em;
+
+							border: 0;
+							color: rgba(255, 255, 255, 0.35);
+							display: inline-block;
+							font-size: 0.5em;
+							font-weight: bold;
+							letter-spacing: 0.25em;
+							text-transform: uppercase;
 						}
 						
 		}
@@ -3623,7 +3637,8 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		/*background: #312450;*/
+		background: #000;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3962,7 +3977,7 @@ input, select, textarea {
 						}
 
 		}
-
+		/*
 		@media screen and (max-width: 736px) {
 
 			#sidebar {
@@ -3970,12 +3985,73 @@ input, select, textarea {
 			}
 
 		}
+		*/
+		/*test*/
+		@media screen and (max-width: 736px) {
+
+			#sidebar {
+				padding: 1em 2em;
+			}
+
+		}
+
+		/*test*/
+		@media screen and (max-width: 480px) {
+
+			#sidebar {
+				display: block;
+				padding: 0 2em;
+				text-align: left;
+				height: 2.5em;
+			}
+
+				#sidebar .title {
+					font-size: 1.25em;
+					padding: 1em 0;
+				}
+
+				#sidebar > nav {
+					border-top: solid 1px rgba(255, 255, 255, 0.15);
+					text-align: inherit;
+				}
+
+				/*test*/
+				#sidebar nav a {
+					-moz-transition: color 0.2s ease;
+					-webkit-transition: color 0.2s ease;
+					-ms-transition: color 0.2s ease;
+					transition: color 0.2s ease;
+					border: 0;
+					color: rgba(255, 255, 255, 0.35);
+					display: block;
+					/*Sidebar text size*/
+					font-size: 0.5em;
+					font-weight: bold;
+					letter-spacing: 0.25em;
+					line-height: 1.75;
+					outline: 0;
+					padding: 1.35em 0;
+					position: relative;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+
+					#sidebar > nav > ul > li {
+						margin-left: 1.5em;
+					}
+
+						#sidebar > nav > ul > li a {
+							height: 6em;
+							line-height: 6em;
+						}
+						
+		}
 
 /* Intro */
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/HeaderPic-2_purp.jpeg");
+		background-image: url("images/HeaderPic-4_grey.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;

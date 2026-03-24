@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dater — Robert Woodhouse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RW</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:RMDWoodhouse@gmail.com" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html#work">Work</a>
+  <a href="index.html#about">About</a>
+  <a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a>
+  <a href="mailto:RMDWoodhouse@gmail.com">Get in Touch →</a>
+</div>
+
+<!-- Hero -->
+<section class="project-hero">
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Work</a>
+
+    <div class="project-hero-tags">
+      <span class="tag">Java</span>
+      <span class="tag">Swing GUI</span>
+      <span class="tag">Cross-platform</span>
+      <span class="tag">Desktop App</span>
+    </div>
+
+    <h1 class="project-hero-title">Dater</h1>
+    <p class="project-hero-desc">
+      A desktop roommate-matching application. Set your compatibility criteria, get a ranked list of compatible housemates, and contact them directly — all from within the app.
+    </p>
+
+    <div class="project-hero-links">
+      <a href="https://github.com/RobertWoodhouse/Dater-application" target="_blank" rel="noopener" class="btn btn-primary">
+        View on GitHub →
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Content -->
+<section class="project-content">
+  <div class="container">
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="gallery-item wide">
+        <img src="../images/Dater-Pic1.png" alt="Dater main screen" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/Dater-Pic2.png" alt="Criteria selection" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/Dater-Pic3.png" alt="Compatibility results" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/Dater-Pic4.png" alt="User profile view" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/Dater-Pic5.png" alt="Contact screen" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="project-info-grid">
+      <div class="project-body">
+        <h3>Overview</h3>
+        <p>
+          Dater is a cross-platform desktop application built in Java with a Swing GUI.
+          The premise is simple: finding compatible roommates is harder than it should be.
+          Dater lets users specify what matters to them — smoker or non-smoker, pets, gender preference,
+          schedule, cleanliness — and surfaces a ranked list of matches from the pool.
+        </p>
+        <p>
+          It's less about romance and more about practicality. Flat-sharing works better
+          when the people involved actually have compatible lifestyles. The app was designed to make that
+          matching process explicit and friction-free.
+        </p>
+
+        <h3>How It Works</h3>
+        <ul>
+          <li>User selects preferences across several lifestyle categories</li>
+          <li>Algorithm ranks candidates by compatibility score</li>
+          <li>Results list is generated and sorted by best match</li>
+          <li>Users can contact matches directly from the results interface</li>
+        </ul>
+
+        <h3>Why Java + Swing</h3>
+        <p>
+          Java Swing was chosen specifically for cross-platform compatibility — the goal was a single
+          codebase that runs identically on Windows and macOS without modification.
+          Swing gave full control over the UI, which was important for keeping the layout clean and functional.
+        </p>
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <p class="meta-label">Type</p>
+          <p class="meta-value">Desktop Application</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Platform</p>
+          <p class="meta-value">Windows &amp; macOS</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Tech Stack</p>
+          <div class="meta-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Swing GUI</span>
+          </div>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Domain</p>
+          <p class="meta-value">Roommate / Flatshare Matching</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Source Code</p>
+          <p class="meta-value">
+            <a href="https://github.com/RobertWoodhouse/Dater-application" target="_blank" rel="noopener" style="color:var(--accent);">GitHub →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding: 4rem 0;">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+    <a href="project-spaceshooter.html" class="back-link" style="margin-bottom:0;">← Space Shooter</a>
+    <a href="project-kickups.html" class="btn btn-outline">Next: Kick Ups →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-copy">&copy; 2026 Robert Woodhouse</p>
+    <p class="footer-copy"><a href="index.html">Back to Home</a></p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
+</script>
+</body>
+</html>

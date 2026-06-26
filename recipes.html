@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes — Robert Woodhouse</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .recipe-card .project-card-image { background: #0d0d0d; }
+    .recipe-card .project-card-image img { width: 100%; height: 100%; object-fit: cover; }
+    .recipe-hero { padding-top: calc(var(--nav-height) + 4rem); padding-bottom: 4.5rem; }
+    .recipe-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.75rem, 7vw, 6rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 0.94;
+      color: var(--text);
+      margin-bottom: 2rem;
+    }
+    .recipe-hero-desc { font-size: 1.1rem; color: var(--text-2); line-height: 1.78; max-width: 600px; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RW</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:RMDWoodhouse@gmail.com" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html#work" onclick="closeNav()">Work</a>
+  <a href="index.html#about" onclick="closeNav()">About</a>
+  <a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a>
+  <a href="mailto:RMDWoodhouse@gmail.com">Get in Touch →</a>
+</div>
+
+<section class="recipe-hero">
+  <div class="container">
+    <div class="project-hero-tags">
+      <span class="tag">Breakfast</span>
+      <span class="tag">Lunch</span>
+      <span class="tag">Dinner</span>
+      <span class="tag">Blood Sugar Optimised</span>
+    </div>
+    <h1 class="recipe-hero-title">Recipes</h1>
+    <p class="recipe-hero-desc">
+      High-protein, blood sugar-optimised meals — every ingredient chosen to support insulin sensitivity without sacrificing flavour.
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="work-grid">
+
+      <a href="bacon-sandwich.html" class="project-card recipe-card fade-up">
+        <div class="project-card-image">
+          <img src="images/bacon-sandwich.svg" alt="Blood Sugar-Optimised Bacon Sandwich" loading="lazy" />
+          <div class="project-card-overlay">
+            <div class="overlay-pill">View Recipe →</div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="tag">Breakfast</span>
+            <span class="tag">Lunch</span>
+            <span class="tag">~575 kcal</span>
+          </div>
+          <h3 class="project-card-title">Bacon Sandwich</h3>
+          <p class="project-card-desc">A high-protein, slow-release breakfast built to minimise glucose spikes. Seeded wholemeal bread, back bacon, and Kerrygold butter.</p>
+          <div class="project-card-footer">
+            <span class="project-card-type">Blood Sugar Optimised</span>
+            <span class="arrow-link">View Recipe →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="full-english.html" class="project-card recipe-card fade-up">
+        <div class="project-card-image">
+          <img src="images/full-english.svg" alt="Blood Sugar-Optimised Full English" loading="lazy" />
+          <div class="project-card-overlay">
+            <div class="overlay-pill">View Recipe →</div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="tag">Breakfast</span>
+            <span class="tag">~580 kcal</span>
+          </div>
+          <h3 class="project-card-title">Full English</h3>
+          <p class="project-card-desc">A full English rebuilt for insulin sensitivity — high protein, healthy fats, no bread, no black pudding, every ingredient chosen to keep your glucose curve flat.</p>
+          <div class="project-card-footer">
+            <span class="project-card-type">Blood Sugar Optimised</span>
+            <span class="arrow-link">View Recipe →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="chipolata-hotdogs.html" class="project-card recipe-card fade-up">
+        <div class="project-card-image">
+          <img src="images/chipolata-hotdogs.svg" alt="Blood Sugar-Optimised Chipolata Hotdogs" loading="lazy" />
+          <div class="project-card-overlay">
+            <div class="overlay-pill">View Recipe →</div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="tag">Lunch</span>
+            <span class="tag">Dinner</span>
+            <span class="tag">~576 kcal</span>
+          </div>
+          <h3 class="project-card-title">Chipolata Hotdogs</h3>
+          <p class="project-card-desc">High-protein, low-sugar hotdogs built for insulin sensitivity. Wholemeal rolls, 93% pork chipolatas, toasted in the sausage fat — no butter needed.</p>
+          <div class="project-card-footer">
+            <span class="project-card-type">Blood Sugar Optimised</span>
+            <span class="arrow-link">View Recipe →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="full-english-chipolata.html" class="project-card recipe-card fade-up">
+        <div class="project-card-image">
+          <img src="images/full-english-chipolata.svg" alt="Blood Sugar-Optimised Full English — Chipolata Version" loading="lazy" />
+          <div class="project-card-overlay">
+            <div class="overlay-pill">View Recipe →</div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="tag">Breakfast</span>
+            <span class="tag">~634 kcal</span>
+          </div>
+          <h3 class="project-card-title">Full English — Chipolata Version</h3>
+          <p class="project-card-desc">A full English rebuilt with chipolatas — high protein, healthy fats, no bread, no mushrooms or tomatoes. Every ingredient chosen to keep your glucose curve flat.</p>
+          <div class="project-card-footer">
+            <span class="project-card-type">Blood Sugar Optimised</span>
+            <span class="arrow-link">View Recipe →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-copy">&copy; 2026 Robert Woodhouse</p>
+    <p class="footer-copy"><a href="index.html">Back to Home</a></p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  function closeNav() { mobileNav.classList.remove('open'); }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

@@ -1,67 +1,173 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Projects | Power Upp</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="shortcut icon" href="https://img.icons8.com/cotton/64/000000/laptop-coding.png" type="image/ico"/>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Upp — Robert Woodhouse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-		<!-- Header -->
-		<header id="header">
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="index.html#one" class="active">Projects </a></li>
-						<li><a href="index.html#two">About</a></li>
-						<li><a href="index.html#three">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RW</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:RMDWoodhouse@gmail.com" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html#work">Work</a>
+  <a href="index.html#about">About</a>
+  <a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a>
+  <a href="mailto:RMDWoodhouse@gmail.com">Get in Touch →</a>
+</div>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1>POWER UPP</h1>
-							<h2 class="major">C# | .NET | XAML | EXCEL</h2>
-							<p>Power Upp is a fitness tracker app focusing on calisthenics workout plans. The purpose of this app is to track your weekly workout routine and generate an Excel line graph from the gathered data.</p>
-							<span class="image fit"><img src="images/PowerUpp-Gif1.gif" alt="" /></span>
-							<p>The user selects an exercise type from the dropdown menu e.g. Squats, Push ups. The user then selects the number of sets they performed for their exercise, finally they enter the number of reps they did for each set.</p>
-							<span class="image fit"><img src="images/PowerUpp-Pic8.PNG" alt="" /></span>
-							<p>Once all options have been selected a line graph is generated showing the users progress for each exercise performed and the date the exercise was recorded.</p>
-							<ul class="actions">
-									<li><a href="illnamethisgamelater.html" class="button primary">Previous</a></li>
-									<li><a href="spaceshooter.html" class="button primary">Next</a></li>
-							</ul>
-						</div>
-					</section>
+<!-- Hero -->
+<section class="project-hero">
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Work</a>
 
-			</div>
+    <div class="project-hero-tags">
+      <span class="tag">C#</span>
+      <span class="tag">.NET</span>
+      <span class="tag">WPF</span>
+      <span class="tag">XAML</span>
+      <span class="tag">Excel</span>
+      <span class="tag">Desktop App</span>
+    </div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<!--<li>&copy; 2020 <a href="index.html#two">Robert Woodhouse</a></li>-->
-						<li><a href="index.html#two">&copy; 2026 Robert Woodhouse</a></li>
-					</ul>
-				</div>
-			</footer>
-	
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <h1 class="project-hero-title">Power Upp</h1>
+    <p class="project-hero-desc">
+      A Windows desktop fitness tracker built in WPF — log your calisthenics workouts, track sets and reps, and watch your progress rendered as Excel line graphs.
+    </p>
 
-	</body>
+    <div class="project-hero-links">
+      <a href="https://github.com/RobertWoodhouse/PowerUpp" target="_blank" rel="noopener" class="btn btn-primary">
+        View on GitHub →
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Content -->
+<section class="project-content">
+  <div class="container">
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="gallery-item wide">
+        <img src="images/PowerUpp-Gif1.gif" alt="Power Upp in action" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/PowerUpp-Pic2.PNG" alt="Workout logging" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/PowerUpp-Pic3.PNG" alt="Exercise selection" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/PowerUpp-Pic6.png" alt="Progress chart" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/PowerUpp-Pic8.PNG" alt="Data overview" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="project-info-grid">
+      <div class="project-body">
+        <h3>Overview</h3>
+        <p>
+          Power Upp is a WPF desktop application aimed at people doing calisthenics or bodyweight training who want
+          to track their weekly progress without signing up for yet another cloud service. Everything runs locally.
+        </p>
+        <p>
+          The app records exercise type, sets performed, and reps per set. Once you have enough sessions logged,
+          it generates line graphs in Excel using the data — giving you a clear visual of your progress over time,
+          per exercise, per recording date.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li>Dropdown exercise selection — squats, push-ups, and more</li>
+          <li>Set counter and per-set rep entry</li>
+          <li>Excel line graph generation from recorded data</li>
+          <li>Per-exercise progress tracking with date history</li>
+          <li>Clean, minimal WPF interface built entirely in XAML</li>
+        </ul>
+
+        <h3>Technical Approach</h3>
+        <p>
+          The graph generation was the most interesting technical challenge — using the Excel interop library from
+          within .NET to programmatically build charts from workout data. WPF's data binding made the UI layer
+          clean and easy to maintain, with the ViewModel layer handling all business logic.
+        </p>
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <p class="meta-label">Type</p>
+          <p class="meta-value">Desktop Application</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Platform</p>
+          <p class="meta-value">Windows</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Tech Stack</p>
+          <div class="meta-tags">
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">WPF</span>
+            <span class="tag">XAML</span>
+            <span class="tag">Excel</span>
+          </div>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Focus Area</p>
+          <p class="meta-value">Calisthenics / Bodyweight Training</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Source Code</p>
+          <p class="meta-value">
+            <a href="https://github.com/RobertWoodhouse/PowerUpp" target="_blank" rel="noopener" style="color:var(--accent);">GitHub →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding: 4rem 0;">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+    <a href="illnamethisgamelater.html" class="back-link" style="margin-bottom:0;">← I'll Name This Game Later</a>
+    <a href="spaceshooter.html" class="btn btn-outline">Next: Space Shooter →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-copy">&copy; 2026 Robert Woodhouse</p>
+    <p class="footer-copy"><a href="index.html">Back to Home</a></p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
+</script>
+</body>
 </html>

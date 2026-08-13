@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'll Name This Game Later | Robert Woodhouse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RW</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:RMDWoodhouse@gmail.com" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html#work">Work</a>
+  <a href="index.html#about">About</a>
+  <a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a>
+  <a href="mailto:RMDWoodhouse@gmail.com">Get in Touch →</a>
+</div>
+
+<!-- Hero -->
+<section class="project-hero">
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Work</a>
+
+    <div class="project-hero-tags">
+      <span class="tag">C#</span>
+      <span class="tag">Unity3D</span>
+      <span class="tag">Android</span>
+      <span class="tag">Mobile Game</span>
+    </div>
+
+    <h1 class="project-hero-title">I'll Name This<br>Game Later</h1>
+    <p class="project-hero-desc">
+      A retro-styled Android shoot 'em up inspired by Asteroids and Defender. Survive as long as you can in deep space. The longer you last, the harder it gets.
+    </p>
+
+    <div class="project-hero-links">
+      <a href="https://play.google.com/store/apps/details?id=com.MoreJoeRock.IllNameThisGameLater" target="_blank" rel="noopener" class="btn btn-primary">
+        Play on Android →
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Content -->
+<section class="project-content">
+  <div class="container">
+
+    <!-- Gallery: portrait mobile screenshots, 3-column layout -->
+    <div class="gallery-portrait">
+      <div class="gallery-item">
+        <img src="../images/INTGL-Pic2.jpg" alt="Gameplay, ship one" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/INTGL-Pic3.jpg" alt="Gameplay, obstacles" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/INTGL-Pic4.jpg" alt="Charged shot" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/INTGL-Pic5.jpg" alt="Ship selection screen" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/INTGL-Pic6.jpg" alt="Unlockable ship" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="../images/INTGL-Pic7.jpg" alt="Leaderboard" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="project-info-grid">
+      <div class="project-body">
+        <h3>Overview</h3>
+        <p>
+          I'll Name This Game Later is a classic top-down shoot 'em up for Android, built in Unity with C#.
+          The goal is simple: survive deep space as long as possible against an ever-increasing wave of obstacles and enemies.
+          It draws heavily from the arcade era: the look, the feel, the punishing difficulty.
+        </p>
+        <p>
+          The dynamic soundtrack was one of the more interesting engineering challenges. The music system monitors player performance in real-time
+          and adjusts intensity accordingly. A good run feels cinematic, a scrappy one feels tense.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li>Standard shooter and charged-shot weapons</li>
+          <li>3 unlockable ships, each with unique speed, damage, and a fully voiced ship computer</li>
+          <li>Dynamic soundtrack that scales with player skill</li>
+          <li>Randomly generated obstacles with increasing difficulty over time</li>
+          <li>Top 10 leaderboard</li>
+        </ul>
+
+        <h3>What I Learned</h3>
+        <p>
+          This was my first full mobile release. Getting the game onto the Play Store taught me as much about product,
+          things like store listings, screenshots, and release pipelines, as it did about Unity. The dynamic audio system
+          was the most technically interesting piece, requiring continuous state polling and smooth track blending.
+        </p>
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <p class="meta-label">Type</p>
+          <p class="meta-value">Mobile Game</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Platform</p>
+          <p class="meta-value">Android</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Tech Stack</p>
+          <div class="meta-tags">
+            <span class="tag">C#</span>
+            <span class="tag">Unity3D</span>
+            <span class="tag">Android SDK</span>
+          </div>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Inspiration</p>
+          <p class="meta-value">Asteroids, Defender</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Available On</p>
+          <p class="meta-value">
+            <a href="https://play.google.com/store/apps/details?id=com.MoreJoeRock.IllNameThisGameLater" target="_blank" rel="noopener" style="color:var(--accent);">Google Play Store →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Next project -->
+<section style="padding: 4rem 0;">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+    <a href="project-mum.html" class="back-link" style="margin-bottom:0;">← Making Unlimited Memories</a>
+    <a href="project-powerupp.html" class="btn btn-outline">Next: Power Upp →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-copy">&copy; 2026 Robert Woodhouse</p>
+    <p class="footer-copy"><a href="index.html">Back to Home</a></p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
+</script>
+</body>
+</html>

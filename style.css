@@ -555,15 +555,15 @@ button { cursor: pointer; font-family: inherit; }
 .social-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  font-size: 0.875rem;
-  font-weight: 500;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
   color: var(--text-2);
   border: 1px solid var(--border);
-  padding: 0.6rem 1.25rem;
   border-radius: 100px;
   transition: color var(--t) var(--ease), border-color var(--t) var(--ease);
 }
+.social-link svg { width: 18px; height: 18px; }
 .social-link:hover { color: var(--text); border-color: var(--border-2); }
 
 /* =====================
@@ -772,6 +772,5 @@ button { cursor: pointer; font-family: inherit; }
 @media (max-width: 480px) {
   .container { padding: 0 1.25rem; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
-  .contact-socials { flex-direction: column; }
   .project-hero-links { flex-direction: column; }
 }

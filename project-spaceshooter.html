@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Shooter | Robert Woodhouse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RW</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:RMDWoodhouse@gmail.com" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html#work">Work</a>
+  <a href="index.html#about">About</a>
+  <a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a>
+  <a href="mailto:RMDWoodhouse@gmail.com">Get in Touch →</a>
+</div>
+
+<!-- Hero -->
+<section class="project-hero">
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Work</a>
+
+    <div class="project-hero-tags">
+      <span class="tag">C#</span>
+      <span class="tag">Unity3D</span>
+      <span class="tag">macOS</span>
+      <span class="tag">OUYA</span>
+      <span class="tag">Game</span>
+    </div>
+
+    <h1 class="project-hero-title">Space Shooter</h1>
+    <p class="project-hero-desc">
+      A competitive versus-mode shoot 'em up for macOS and the OUYA console. Two ships, two weapon types, limited special ammo, and one rule: one hit and you're down.
+    </p>
+
+    <div class="project-hero-links">
+      <a href="https://github.com/RobertWoodhouse/Space-Shooter-Demo" target="_blank" rel="noopener" class="btn btn-primary">
+        View on GitHub →
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Content -->
+<section class="project-content">
+  <div class="container">
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="gallery-item wide">
+        <img src="images/SpaceShooter-Gif1.gif" alt="Space Shooter gameplay" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/SpaceShooter-Pic1.png" alt="Ship vs ship" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/SpaceShooter-Pic2.png" alt="Power-up spawn" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/SpaceShooter-Pic3.png" alt="Special weapons" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/SpaceShooter-Pic4.png" alt="End screen" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="project-info-grid">
+      <div class="project-body">
+        <h3>Overview</h3>
+        <p>
+          Space Shooter is a competitive two-player game built in Unity for macOS and the OUYA Android-based games console.
+          It takes clear inspiration from classic arcade shooters, namely R-Type, Gradius, and Ikaruga, but frames them in a head-to-head
+          versus format rather than a single-player experience.
+        </p>
+        <p>
+          The ruleset is intentionally tight: one shot ends you. Each player starts with 3 lives. Last one standing wins the round.
+          It's a game about reading your opponent and controlling the space between you.
+        </p>
+
+        <h3>Weapons &amp; Power-Ups</h3>
+        <ul>
+          <li>Standard shooter: infinite ammo, the bread and butter</li>
+          <li>Special weapon: limited ammo; includes homing missiles, lasers, or rapid fire depending on which power-up you collect</li>
+          <li>Power-ups spawn randomly, grab them for increased ship speed or improved rate of fire</li>
+        </ul>
+
+        <h3>Platform Notes</h3>
+        <p>
+          The OUYA was a short-lived Android-based console that used standard game controllers.
+          Building for it meant targeting a specific controller input API, an interesting constraint that forced
+          deliberate decisions about control scheme and UI layout.
+        </p>
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <p class="meta-label">Type</p>
+          <p class="meta-value">Versus Game</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Platform</p>
+          <p class="meta-value">macOS, OUYA</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Tech Stack</p>
+          <div class="meta-tags">
+            <span class="tag">C#</span>
+            <span class="tag">Unity3D</span>
+          </div>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Genre</p>
+          <p class="meta-value">Shoot 'em up, Versus Mode</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Inspiration</p>
+          <p class="meta-value">R-Type, Gradius, Ikaruga</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Source Code</p>
+          <p class="meta-value">
+            <a href="https://github.com/RobertWoodhouse/Space-Shooter-Demo" target="_blank" rel="noopener" style="color:var(--accent);">GitHub →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding: 4rem 0;">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+    <a href="project-powerupp.html" class="back-link" style="margin-bottom:0;">← Power Upp</a>
+    <a href="project-dater.html" class="btn btn-outline">Next: Dater →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-copy">&copy; 2026 Robert Woodhouse</p>
+    <p class="footer-copy"><a href="index.html">Back to Home</a></p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
+</script>
+</body>
+</html>

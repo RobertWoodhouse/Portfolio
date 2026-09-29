@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Making Unlimited Memories | Robert Woodhouse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RW</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:RMDWoodhouse@gmail.com" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html#work">Work</a>
+  <a href="index.html#about">About</a>
+  <a href="https://github.com/RobertWoodhouse" target="_blank" rel="noopener">GitHub</a>
+  <a href="mailto:RMDWoodhouse@gmail.com">Get in Touch →</a>
+</div>
+
+<!-- Hero -->
+<section class="project-hero">
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Work</a>
+
+    <div class="project-hero-tags">
+      <span class="tag">Client Project</span>
+      <span class="tag">HTML/CSS/JS</span>
+      <span class="tag">Stripe &amp; Klarna</span>
+      <span class="tag">Netlify Functions</span>
+    </div>
+
+    <h1 class="project-hero-title">Making Unlimited Memories</h1>
+    <p class="project-hero-desc">
+      A full freelance build for a South East London mobile soft play hire business: booking, live availability, deposit payments via Stripe, and a delivery-zone checker, all running on a static site with no backend or database.
+    </p>
+
+    <div class="project-hero-links">
+      <a href="https://makingunlimitedmemories.co.uk/" target="_blank" rel="noopener" class="btn btn-primary">
+        Visit Site →
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Content -->
+<section class="project-content">
+  <div class="container">
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="gallery-item wide">
+        <img src="images/Hero-Main-2.png" alt="Making Unlimited Memories hero image" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="project-info-grid">
+      <div class="project-body">
+        <h3>Overview</h3>
+        <p>
+          Making Unlimited Memories runs a mini soft play park hire service for ages 1 to 5 across South East London
+          (Bellingham, Beckenham, Catford, Sydenham, and Bromley). I designed and built the full site end to end,
+          covering brand-consistent design, product catalogue, and a real booking-and-payment flow, as a solo freelance
+          engagement, from first line of code to a live deposit-taking checkout.
+        </p>
+        <p>
+          The brief was to give a small, hands-on business the kind of booking experience customers expect from
+          much bigger operators, without the overhead of a full backend or ongoing hosting costs.
+        </p>
+
+        <h3>What I Built</h3>
+        <ul>
+          <li>Deposit-only checkout via Stripe (Klarna wired in as an optional payment method), real card payments, not a stub</li>
+          <li>Live availability calendar with per-day capacity limits, a short-notice cutoff, and an "enquire" fallback that routes tight or ambiguous dates to a contact form instead of blocking the sale outright</li>
+          <li>Postcode-based delivery zone checker: free delivery inside named areas (and a buffer beyond them), mileage-based pricing outside it, using the free UK postcode API plus a Haversine distance calculation</li>
+          <li>Password-gated admin pages for managing discount codes and blocking out dates, with no dashboard or database to maintain</li>
+          <li>Netlify Forms-based contact form with spam honeypot protection</li>
+        </ul>
+
+        <h3>Why This Stack</h3>
+        <p>
+          The whole site is vanilla HTML/CSS/JS with no build step, deliberately, to keep it cheap to host and easy
+          for a non-technical owner to hand off changes for. Anything that genuinely needed a server, such as creating a real
+          Stripe PaymentIntent or checking live booking counts, runs through small Netlify Functions instead of a
+          full backend, with day-by-day booking counts held in Netlify Blobs rather than a database.
+        </p>
+        <p>
+          The site is currently live as a coming-soon page at its final domain while the full booking experience
+          finishes rollout. The booking flow, payments, and admin tools above are already built and tested,
+          not aspirational.
+        </p>
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <p class="meta-label">Type</p>
+          <p class="meta-value">Client Website</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Platform</p>
+          <p class="meta-value">Web (Responsive)</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Tech Stack</p>
+          <div class="meta-tags">
+            <span class="tag">HTML/CSS/JS</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">Netlify Functions</span>
+          </div>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Domain</p>
+          <p class="meta-value">Party &amp; Event Hire Booking</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Live Site</p>
+          <p class="meta-value">
+            <a href="https://makingunlimitedmemories.co.uk/" target="_blank" rel="noopener" style="color:var(--accent);">makingunlimitedmemories.co.uk →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section style="padding: 4rem 0;">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+    <a href="index.html#work" class="back-link" style="margin-bottom:0;">← All Projects</a>
+    <a href="project-intgl.html" class="btn btn-outline">Next: I'll Name This Game Later →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-copy">&copy; 2026 Robert Woodhouse</p>
+    <p class="footer-copy"><a href="index.html">Back to Home</a></p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
+</script>
+</body>
+</html>

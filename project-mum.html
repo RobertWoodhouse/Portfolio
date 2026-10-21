@@ -45,7 +45,7 @@
 
     <h1 class="project-hero-title">Making Unlimited Memories</h1>
     <p class="project-hero-desc">
-      A full freelance build for a South East London mobile soft play hire business — booking, payments, and ongoing analytics, built and maintained end to end.
+      A full freelance build for a South East London mobile soft play hire business, covering booking, payments, and ongoing analytics, built and maintained end to end.
     </p>
 
     <div class="project-hero-links">
@@ -75,27 +75,27 @@
         <h3>Overview</h3>
         <p>
           Making Unlimited Memories hires out mini soft play equipment for ages 1–5 across South East London
-          (Bellingham, Beckenham, Catford, Sydenham, and Bromley) — birthday parties, community events, and
+          (Bellingham, Beckenham, Catford, Sydenham, and Bromley) for birthday parties, community events, and
           pop-up play mornings. I built and continue to maintain the full site as a solo freelance engagement:
           not just the initial build, but the live operational system the business runs on day to day.
         </p>
         <p>
           The brief evolved from "a working checkout" into a small platform: automated deposit and
-          damage-deposit handling, scheduled customer communications, a delivery-pricing engine, and an
-          internal toolset that lets the owner manage pricing, availability, and marketing links without
+          damage-deposit handling, scheduled customer communications, a delivery-zone engine, and an
+          internal toolset that lets the owner manage discounts, availability, and marketing links without
           touching code.
         </p>
 
         <h3>What I Built</h3>
         <ul>
-          <li>Deposit-based Stripe checkout, with an automated £100 damage-deposit authorization hold placed 3 days before each event and a staff tool to capture or release it after inspection</li>
-          <li>A delivery-area pricing engine: postcode lookup and Haversine distance calculation against a free-delivery radius, with a flat per-mile surcharge beyond it — live on both the homepage and checkout, so quoted and charged prices always match</li>
+          <li>Deposit-based Stripe checkout, with an automated damage-deposit authorization hold placed 3 days before each event and a staff tool to capture or release it after inspection</li>
+          <li>A delivery-area zone checker: postcode lookup and Haversine distance calculation determines whether an address falls inside the free-delivery radius, with the same logic shared between the homepage checker and checkout so the result is always consistent</li>
           <li>Scheduled, automated emails via Resend: balance-due reminders at 7 and 2 days before an event, damage-deposit hold confirmations, and an internal alert when a listed event's date has passed and needs archiving</li>
           <li>A live booking-availability calendar and real-time add-on stock limits, both enforced server-side, not just in the UI</li>
-          <li>A password-gated internal admin suite (5 tools): discount-code generation, availability/date-blocking, custom price-adjusted package links for individual customers, damage-deposit management, and a UTM link builder for tracking social/QR campaign traffic</li>
+          <li>A password-gated internal admin suite (5 tools): discount-code generation, availability/date-blocking, custom package-adjustment links for individual customers, damage-deposit management, and a UTM link builder for tracking social/QR campaign traffic</li>
           <li>GA4 and Meta Pixel wired in across every customer-facing page, with Purchase/Lead conversion events tied to real booking and contact-form data</li>
           <li>Netlify Forms-powered contact form (honeypot spam protection) and a newsletter signup (Brevo) issuing single-use discount codes</li>
-          <li>Client-side PDF invoice generation, itemizing deposit, delivery charge, and outstanding balance</li>
+          <li>Client-side PDF invoice generation for each booking</li>
         </ul>
 
         <h3>Why This Stack</h3>
@@ -109,9 +109,9 @@
         </p>
         <p>
           The same philosophy carries into the admin tools: rather than a generic CMS, each internal tool does
-          exactly one job the business actually needs — generate a code, block a date, build a tracked link —
-          kept deliberately small and legible rather than a general-purpose dashboard nobody but a developer
-          could extend.
+          exactly one job the business actually needs, such as generating a code, blocking a date, or building a
+          tracked link, kept deliberately small and legible rather than a general-purpose dashboard nobody but a
+          developer could extend.
         </p>
         <p>
           <strong>Status:</strong> live and in active use. The business runs its real bookings, payments, and

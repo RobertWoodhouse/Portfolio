@@ -37,14 +37,15 @@
 
     <div class="project-hero-tags">
       <span class="tag">Client Project</span>
-      <span class="tag">HTML/CSS/JS</span>
-      <span class="tag">Stripe &amp; Klarna</span>
-      <span class="tag">Netlify Functions</span>
+      <span class="tag">Vanilla JS / HTML / CSS</span>
+      <span class="tag">Stripe</span>
+      <span class="tag">Netlify Functions &amp; Blobs</span>
+      <span class="tag">GA4 &amp; Meta Pixel</span>
     </div>
 
     <h1 class="project-hero-title">Making Unlimited Memories</h1>
     <p class="project-hero-desc">
-      A full freelance build for a South East London mobile soft play hire business: booking, live availability, deposit payments via Stripe, and a delivery-zone checker, all running on a static site with no backend or database.
+      A full freelance build for a South East London mobile soft play hire business — booking, payments, and ongoing analytics, built and maintained end to end.
     </p>
 
     <div class="project-hero-links">
@@ -73,36 +74,49 @@
       <div class="project-body">
         <h3>Overview</h3>
         <p>
-          Making Unlimited Memories runs a mini soft play park hire service for ages 1 to 5 across South East London
-          (Bellingham, Beckenham, Catford, Sydenham, and Bromley). I designed and built the full site end to end,
-          covering brand-consistent design, product catalogue, and a real booking-and-payment flow, as a solo freelance
-          engagement, from first line of code to a live deposit-taking checkout.
+          Making Unlimited Memories hires out mini soft play equipment for ages 1–5 across South East London
+          (Bellingham, Beckenham, Catford, Sydenham, and Bromley) — birthday parties, community events, and
+          pop-up play mornings. I built and continue to maintain the full site as a solo freelance engagement:
+          not just the initial build, but the live operational system the business runs on day to day.
         </p>
         <p>
-          The brief was to give a small, hands-on business the kind of booking experience customers expect from
-          much bigger operators, without the overhead of a full backend or ongoing hosting costs.
+          The brief evolved from "a working checkout" into a small platform: automated deposit and
+          damage-deposit handling, scheduled customer communications, a delivery-pricing engine, and an
+          internal toolset that lets the owner manage pricing, availability, and marketing links without
+          touching code.
         </p>
 
         <h3>What I Built</h3>
         <ul>
-          <li>Deposit-only checkout via Stripe (Klarna wired in as an optional payment method), real card payments, not a stub</li>
-          <li>Live availability calendar with per-day capacity limits, a short-notice cutoff, and an "enquire" fallback that routes tight or ambiguous dates to a contact form instead of blocking the sale outright</li>
-          <li>Postcode-based delivery zone checker: free delivery inside named areas (and a buffer beyond them), mileage-based pricing outside it, using the free UK postcode API plus a Haversine distance calculation</li>
-          <li>Password-gated admin pages for managing discount codes and blocking out dates, with no dashboard or database to maintain</li>
-          <li>Netlify Forms-based contact form with spam honeypot protection</li>
+          <li>Deposit-based Stripe checkout, with an automated £100 damage-deposit authorization hold placed 3 days before each event and a staff tool to capture or release it after inspection</li>
+          <li>A delivery-area pricing engine: postcode lookup and Haversine distance calculation against a free-delivery radius, with a flat per-mile surcharge beyond it — live on both the homepage and checkout, so quoted and charged prices always match</li>
+          <li>Scheduled, automated emails via Resend: balance-due reminders at 7 and 2 days before an event, damage-deposit hold confirmations, and an internal alert when a listed event's date has passed and needs archiving</li>
+          <li>A live booking-availability calendar and real-time add-on stock limits, both enforced server-side, not just in the UI</li>
+          <li>A password-gated internal admin suite (5 tools): discount-code generation, availability/date-blocking, custom price-adjusted package links for individual customers, damage-deposit management, and a UTM link builder for tracking social/QR campaign traffic</li>
+          <li>GA4 and Meta Pixel wired in across every customer-facing page, with Purchase/Lead conversion events tied to real booking and contact-form data</li>
+          <li>Netlify Forms-powered contact form (honeypot spam protection) and a newsletter signup (Brevo) issuing single-use discount codes</li>
+          <li>Client-side PDF invoice generation, itemizing deposit, delivery charge, and outstanding balance</li>
         </ul>
 
         <h3>Why This Stack</h3>
         <p>
-          The whole site is vanilla HTML/CSS/JS with no build step, deliberately, to keep it cheap to host and easy
-          for a non-technical owner to hand off changes for. Anything that genuinely needed a server, such as creating a real
-          Stripe PaymentIntent or checking live booking counts, runs through small Netlify Functions instead of a
-          full backend, with day-by-day booking counts held in Netlify Blobs rather than a database.
+          No framework, no build step: just HTML, CSS, and vanilla JavaScript, with Netlify Functions handling
+          everything that needs a server (payments, email, scheduled jobs) and Netlify Blobs standing in for a
+          database. For a single-owner business with no dedicated dev team, that's a deliberate trade: the
+          entire site runs on Netlify's free/low tier, deploys are a single <code>git push</code>, and there's
+          no framework version, dependency tree, or ORM for a future developer (or the owner themselves) to
+          inherit and get stuck on.
         </p>
         <p>
-          The site is currently live as a coming-soon page at its final domain while the full booking experience
-          finishes rollout. The booking flow, payments, and admin tools above are already built and tested,
-          not aspirational.
+          The same philosophy carries into the admin tools: rather than a generic CMS, each internal tool does
+          exactly one job the business actually needs — generate a code, block a date, build a tracked link —
+          kept deliberately small and legible rather than a general-purpose dashboard nobody but a developer
+          could extend.
+        </p>
+        <p>
+          <strong>Status:</strong> live and in active use. The business runs its real bookings, payments, and
+          customer communications through this system today; a companion WordPress install handles standalone
+          SEO landing pages, kept fully decoupled from the booking/checkout system itself.
         </p>
       </div>
 
@@ -121,6 +135,11 @@
             <span class="tag">HTML/CSS/JS</span>
             <span class="tag">Stripe</span>
             <span class="tag">Netlify Functions</span>
+            <span class="tag">Netlify Blobs</span>
+            <span class="tag">Resend</span>
+            <span class="tag">Brevo</span>
+            <span class="tag">GA4</span>
+            <span class="tag">Meta Pixel</span>
           </div>
         </div>
         <div class="meta-item">

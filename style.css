@@ -773,4 +773,5 @@ button { cursor: pointer; font-family: inherit; }
   .container { padding: 0 1.25rem; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .project-hero-links { flex-direction: column; }
+  .tag-optional { display: none; }
 }
